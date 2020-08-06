@@ -2,5 +2,10 @@
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes. 
 document.addEventListener("DOMContentLoaded", function(e){
-    C:\Users\wilme\OneDrive\Documentos\Jap\workspace-incial\WORKSPACE-INCIAL\login.html
+    document.getElementById('userinfo').addEventListener('submit', (evento)=> {
+        evento.preventDefault();
+        location.href = "./index.html";
+        sessionStorage.setItem("logged",true); 
+        return true;
+    })
 });
